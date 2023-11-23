@@ -1,0 +1,45 @@
+export const blockchains = [
+    {
+      name: 'Arbitrum',
+      id: 0,
+      icon: 'Arbitrum One',
+      value: 'arbitrum',
+      rpcUrl: 'https://arbitrum.drpc.org',
+    },
+    {
+      name: 'Avalanche',
+      id: 1,
+      icon: 'Avalanche',
+      value: 'avalanche',
+      rpcUrl: 'https://avalanche.drpc.org/',
+    },
+    { name: 'BNB Chain', id: 2, icon: 'BSC', value: 'BNB Chain', rpcUrl: 'https://bsc.drpc.org/' },
+    { name: 'Celo', id: 9, icon: 'Celo', value: 'celo', rpcUrl: 'https://celo.drpc.org' },
+    {
+      name: 'Cronos',
+      icon: 'Cronos',
+      id: 6,
+      value: 'cronos',
+      rpcUrl: 'https://evm-cronos.crypto.org',
+    },
+    { name: 'Ethereum', icon: 'Ethereum', id: 3, value: 'ethereum', rpcUrl: 'https://eth.drpc.org' },
+    { name: 'Fantom', icon: 'Fantom', id: 8, value: 'fantom', rpcUrl: 'https://fantom.drpc.org/' },
+    { name: 'Harmony', icon: 'Harmony', id: 10, value: 'harmony', rpcUrl: 'https://api.harmony.one' },
+    {
+      name: 'Moonbeam',
+      icon: 'Moonbeam',
+      id: 7,
+      value: 'moonbeam',
+      rpcUrl: 'https://moonbeam.drpc.org',
+    },
+    {
+      name: 'Optimism',
+      icon: 'Optimism',
+      id: 5,
+      value: 'optimism',
+      rpcUrl: 'https://optimism.drpc.org',
+    },
+    { name: 'Polygon', icon: 'Polygon', id: 4, value: 'polygon', rpcUrl: 'https://polygon.drpc.org' },
+  
+    // { name: 'Solana', icon: '/_nuxt/assets/images/solana.svg', id: 11, value: 'solana' },
+  ];

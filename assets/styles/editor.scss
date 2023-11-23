@@ -1,0 +1,65 @@
+$name-font: 'Basis Grotesque Pro';
+$font-size: 16px;
+$line-height: 24px;
+$color: $colabs-bg;
+
+.editor-wrapper {
+  .ql-toolbar.ql-snow,
+  .ql-container.ql-snow .ql-editor,
+  .editor-text {
+    font-family: 'Basis Grotesque Pro';
+    font-style: normal;
+    font-weight: 400;
+    line-height: $line-height;
+    font-feature-settings: 'tnum' on, 'lnum' on, 'zero' on;
+    color: $section-title;
+    font-size: 20px;
+  }
+  .ql-editor.ql-blank::before {
+    font-family: 'Basis Grotesque Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    hanging-punctuation: first last;
+    font-feature-settings: 'tnum' on, 'lnum' on, 'zero' on, 'ordn' on, 'ss04' on;
+    color: $colabs-bg;
+  }
+  .ql-container.ql-snow {
+    background-color: $white;
+    min-height: 40px;
+    border: none;
+
+    .ql-editor {
+      min-height: 40px;
+      max-height: fit-content;
+      margin-top: 24px;
+      p {
+        font-family: 'Basis Grotesque Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        color: $section-title;
+        hanging-punctuation: first last;
+        font-feature-settings: 'tnum' on, 'lnum' on, 'zero' on, 'ordn' on, 'ss04' on;
+      }
+      &:focus {
+        background: $default-bg;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  .ql-toolbar.ql-snow {
+    background: #f5f5fd;
+    border-radius: 8px;
+    padding: 8px;
+    gap: 16px;
+    border: none;
+    width: fit-content;
+    svg {
+      filter: invert(69%) sepia(6%) saturate(1262%) hue-rotate(214deg) brightness(99%) contrast(22%);
+    }
+  }
+}

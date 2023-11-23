@@ -1,0 +1,25 @@
+{
+  "id":1243,
+  "name":"These are the instructions",
+  "text":"These are the instructions to complete the task.",
+  "in_work":null,
+  "project":{},
+  "rewards":[
+    {
+      "id":985,
+      "type":"coins",
+      "value":"1"
+    }
+  ],
+  "activity":null,
+  "priority":"low",
+  "coin_type":{},
+  "started_at":"2023-05-19 22:00:00",
+  "ended_at":"2023-05-30 22:00:00",
+  "number_of_invites":0,
+  "is_invite_friends":false,
+  "autovalidate":false,
+  "verifier_driver":null,
+  "status_by_dates":"finished",
+  "assigned_to_user":null
+}
