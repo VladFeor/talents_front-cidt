@@ -1,13 +1,15 @@
 <template>
   <div class="modal-overlay" v-if="visible" @click.self="closeModal">
-    <div class="modal-container" :style="{
-      width: width + 'px',
-      height: customHeight,
-      top: typeof top == 'number' ? top + 'px' : top,
-      right: typeof rightCustom == 'number' ? rightCustom + 'px' : rightCustom,
-      transform: (rightCustom == '50%' && top == '50%') && 'translate(50%, -50%)',
-      bottom: bottom + 'px',
-    }">
+    <div class="modal-container" 
+    :style="{
+        width: width + 'px',
+        height: customHeight,
+        top: top + 'px',
+        right: rightCustom || rightCustom === 0 ? rightCustom + 'px' : right + 'px',
+        bottom: bottom + 'px',
+        maxHeight: maxHeight,
+      }"
+    >
       <div v-if="props.title" class="modal-header">
         <h2>{{ props.title }}</h2>
       </div>
@@ -28,7 +30,7 @@ const props = defineProps({
   visible: { type: Boolean, default: false },
   title: { type: String, default: '' },
   width: { type: Number, default: 400 },
-  top: { type: Number, default: '50%' },
+  top: { type: Number, default: window.innerHeight / 2 - 110 },
   customHeight: { type: Number, default: 'fit-content' },
   maxHeight: { type: Number, default: 'auto' },
   maxHeightBody: { type: Number, default: '100%' },
