@@ -35,7 +35,7 @@ const actionRedirect = () => {
     border-radius: 16px;
     display: flex;
     flex-direction: column;
-    background-color: #DAD9F7;
+    background-color: #EAEAFB;
     padding: 22px 18px;
     margin-bottom: 8px;
     max-width: 416px;
